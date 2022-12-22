@@ -1,10 +1,9 @@
-/* 
-    Author: Vijay Thapa;
-    Theme: Restaurant Food Order;
-    version: 1.0;
-*/
+:root{
 
-/* CSS for All */
+    --FuenteRaiz: 'Staatliches', cursive;
+
+}
+
 *{
     margin: 0 0;
     padding: 0 0;
@@ -198,6 +197,7 @@ fieldset{
 .order-label{
     margin-bottom: 1%; 
     font-weight: bold;
+    font
 }
 
 
