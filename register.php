@@ -52,7 +52,7 @@
 
 		form{
 			background-color: #999999;
-			padding: 10px;
+			padding: 30px;
 			margin: 100px auto;
 			width: 300px;
 		}
@@ -64,7 +64,7 @@
 		input[type="submit"]{
 			border: 0;
 			background-color: #ED8824;
-			padding: 10px 20px;
+			padding: 20px 0px;
 		}
 
 		.error{
@@ -83,6 +83,14 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
         }
+
+        
+        .parrafo_boton{
+            padding: 10px;
+            text-align: center
+        
+        }
+
 	</style>
 </head>
 <body>
@@ -98,64 +106,10 @@
 		<input type="password" name="password">
 		</p>
         <br>
-		<p class="parrafo"><input type="submit" value="Iniciar Sesión"></p> 
+        <p class="parrafo">
+		Correo Electrónico<br>
+		<input type="password" name="password">
+		</p>
+        <br>
+		<p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
 	</form>
-
-    <!-- <div class="container">
-        <br>
-        <br>
-        
-        <br>
-        <br>
-        <br>
-        <form action="validar.php" method="POST">
-    
-   <center> <p class="fuente">Usuario <br><br><input type="text" placeholder="Ingresa tu nombre" name="usuario"></p>
-    <br>
-    <p class="fuente">Constraseña <br><br> <input type="password" placeholder="Ingresa tu contraseña " name="password"> </p>
-    <br>
-    <input type="submit" value="Iniciar Sesión">
-    </form>
-    <br>
-    <br>
-</center>
-
-        <center><div data-v-60058e8b="" class="download-icon-wrapper"><a data-v-60058e8b="" href="javascript:;"><!-- <img data-v-60058e8b="" src="https://img0.didiglobal.com/static/soda_static/c/webapp/dist/img/download_appstore_es-MX.84861c58.svg" class="download-exe"> --><center><a data-v-60058e8b="" href="javascript:;"><img data-v-60058e8b="" src="https://img0.didiglobal.com/static/soda_static/c/webapp/dist/img/download_google_es-MX.264765f5.svg" class="download-google-play"/></a></div></div></center>
-
-
-
-    
-  
-
-    <!-- social Section Starts Here -->
-    <section class="social">
-        <div class="container text-center">
-            <h2 class="text-center">Realiza tu Pedido.</h2>
-            <ul>
-                <li>
-                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=525518083383"target="_blank" ><img src="https://img.icons8.com/fluent/48/000000/whatsapp.png"/></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- social Section Ends Here -->
-
-    <!-- footer Section Starts Here -->
-    <section class="footer">
-        <div class="container text-center">
-            
-        </div>
-    </section>
-    <!-- footer Section Ends Here -->
-
-</body>
-</html>
