@@ -23,7 +23,7 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.html">Inicio</a>
+                        <a href="entrada.php">Inicio</a>
                     </li>
                     <li>
                         <a href="categories.html">Categorías</a>

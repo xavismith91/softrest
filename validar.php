@@ -20,7 +20,6 @@ $consulta="SELECT*FROM login where usuario='$usuario' and password='$password'";
 //el resultado de la consulta se guardara en la variable "resultado"
 
 $resultado=mysqli_query($conexion, $consulta);
-
 //en el siguiente método recibirá la cantidad de fias de la consulta anterior en caso de tener contenido despliega el acceso al inicio si no declina la operacion
 
 $filas=mysqli_num_rows($resultado);
