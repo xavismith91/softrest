@@ -14,11 +14,11 @@
     <!-- Navbar Section Starts Here -->
     <section class="navbar">
         <div class="container">
-            <div class="logo">
+            <!-- <div class="logo">
                 <a href="index.html" title="Logo">
                     <img src="images/logocast-2.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
-            </div>
+            </div> -->
 
             <div class="menu text-right">
                 <ul>
@@ -45,19 +45,19 @@
     </section>
     <!-- Navbar Section Ends Here -->
 
-    <!-- fOOD sEARCH Section Starts Here -->
+   
 
 <style>
-		body{background-color: white; box-sizing: border-box; font-family: Arial;}
+		body{background-color: orange; box-sizing: border-box; font-family: Arial;}
 
 		form{
-			background-color: #999999;
+			background-color:  #f7f2ed  ;
 			padding: 30px;
-			margin: 100px auto;
+			margin: 90px;
 			width: 300px;
 		}
 
-		input[type=text], input[type=password]{
+		input[type=text], input[type=password], input[type="mail"]{
 			padding: 10px;
 			width: 280px;
 		}
@@ -87,29 +87,51 @@
         
         .parrafo_boton{
             padding: 10px;
-            text-align: center
-        
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
 	</style>
 </head>
 <body>
-	<form action="validar.php" method="POST">
+	<form action="insertnewuser.php" method="POST">
 		
 		<p class="parrafo">
-		Usuario<br>
-		<input type="text" name="usuario">
+        Nombre<br>
+		<input type="text" name="nombre">
 		</p>
         <br>
 		<p class="parrafo">
-		Contraseña<br>
-		<input type="password" name="password">
+		Apellido Paterno<br>
+		<input type="text" name="appaterno">
 		</p>
         <br>
         <p class="parrafo">
-		Correo Electrónico<br>
-		<input type="password" name="password">
+		Apellido Materno<br>
+		<input type="text" name="apmaterno">
 		</p>
         <br>
-		<p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
+        <p class="parrafo">
+		Correo<br>
+		<input type="mail" name="mail">
+		</p>
+        <br>
+		<p class="parrafo">
+		Estado<br>
+		<input type="text" name="estado">
+		</p>
+        <br>
+        <p class="parrafo">
+		Constraseña<br>
+		<input type="text" name="password">
+		</p>
+        <br>
+        <p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
 	</form>
+
+    <?php 
+
+
+
+    ?>
+    
