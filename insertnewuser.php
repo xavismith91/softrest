@@ -1,26 +1,47 @@
 <?php
-if (isset($_POST['submit'])) {
-    // Recibir los datos del formulario
+
+//declaramos las variables 
     $nombre = $_POST['nombre'];
-    $appat = $_POST['appaterno'];
-    $apmat =$_POST['apmaternp'];
-    $mail = $_POST['mail'];
+    $appat = $_POST['appat'];
+    $appmat =$_POST['appmat'];
+    $correo = $_POST['correo'];
     $estado = $_POST['estado'];
-    $pcontrasena = $_POST['contrasena'];
-    // Conectarse a la base de datos
-    $conn = new mysqli("localhost", "user", "", "users");
-    // Verificar la conexión
-    if ($conn->connect_error) {
-        die("Error de conexión: " . $conn->connect_error);
-    }
-    // Insertar los datos en la tabla
-    $sql = "INSERT INTO tabla (nombre, appaterno , apmaterno, mail, estado, password) VALUES ('$nombre', '$apellido', '$edad')";
-    if ($conn->query($sql) === TRUE) {
-        echo "Registro insertado correctamente";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    // Cerrar la conexión
-    $conn->close();
+    $rol = $_POST['rol'];
+    $contrasena = $_POST['contrasena'];
+    
+//declaramos variables para la conexion a la base de datos
+
+$servername = "localhost"; 
+$database = "test";
+$username = "root";
+$password = "";
+
+
+// creamos  el query para conexion de la base de datos 
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// revisamos la conexión
+
+if(!$conn)
+{
+    die("Falló la conexion: " . mysqli_connect_error()); 
 }
+
+echo "Conexion exitosa";
+
+
+//hacemos el query para insertar registros 
+
+$sql = "INSERT INTO users (nombre,appat,appmat,correo,estado,rol,contrasena) VALUES ('$nombre','$appat','$appmat','$correo','$estado','$rol','$contrasena')";
+
+if (mysqli_query($conn,$sql))
+{
+    echo "Nuevo registro insertado exitosamente";
+    header("location:entrada.php");
+}
+else{
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
 ?>

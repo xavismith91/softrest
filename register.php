@@ -25,21 +25,11 @@
                     <li>
                         <a href="register.php">Registrate</a>
                     </li>
-                    <!-- <li>
-                        <a href="categories.html">Categorías</a>
-                    </li>
-                    <li>
-                        <a href="foods.html">Comida</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacto</a>
-                    </li> -->
                     <li>
                         <a href="login.html">Iniciar Sesion</a>
                     </li>
                 </ul>
             </div>
-
             <div class="clearfix"></div>
         </div>
     </section>
@@ -95,7 +85,6 @@
 </head>
 <body>
 	<form action="insertnewuser.php" method="POST">
-		
 		<p class="parrafo">
         Nombre<br>
 		<input type="text" name="nombre">
@@ -103,17 +92,17 @@
         <br>
 		<p class="parrafo">
 		Apellido Paterno<br>
-		<input type="text" name="appaterno">
+		<input type="text" name="appat">
 		</p>
         <br>
         <p class="parrafo">
 		Apellido Materno<br>
-		<input type="text" name="apmaterno">
+		<input type="text" name="appmat">
 		</p>
         <br>
         <p class="parrafo">
 		Correo<br>
-		<input type="mail" name="mail">
+		<input type="text" name="correo">
 		</p>
         <br>
 		<p class="parrafo">
@@ -122,8 +111,13 @@
 		</p>
         <br>
         <p class="parrafo">
+		Rol<br>
+		<input type="text" name="rol">
+		</p>
+        <br>
+        <p class="parrafo">
 		Constraseña<br>
-		<input type="text" name="password">
+		<input type="password" name="contrasena">
 		</p>
         <br>
         <p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
