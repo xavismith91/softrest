@@ -84,48 +84,50 @@
 	</style>
 </head>
 <body>
+
 	<form action="insertnewuser.php" method="POST">
 		<p class="parrafo">
         Nombre<br>
-		<input type="text" name="nombre">
+		<input type="text" name="nombre" required>
 		</p>
         <br>
 		<p class="parrafo">
 		Apellido Paterno<br>
-		<input type="text" name="appat">
+		<input type="text" name="appat" required>
 		</p>
         <br>
         <p class="parrafo">
 		Apellido Materno<br>
-		<input type="text" name="appmat">
+		<input type="text" name="appmat" required>
 		</p>
         <br>
         <p class="parrafo">
 		Correo<br>
-		<input type="text" name="correo">
+		<input type="text" name="correo" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
 		</p>
         <br>
 		<p class="parrafo">
 		Estado<br>
-		<input type="text" name="estado">
+		<input type="text" name="estado" required>
 		</p>
         <br>
         <p class="parrafo">
 		Rol<br>
-		<input type="text" name="rol">
+		<input type="text" name="rol" required>
 		</p>
         <br>
-        <p class="parrafo">
+        <p class="parrafo" value="contrasena">
 		Constraseña<br>
-		<input type="password" name="contrasena">
+		<input type="password" name="$contrasena" required>
+		</p>
+        <br>
+        <p class="parrafo" value="$contrasena2">
+		Confirmar Contraseña<br>
+		<input type="password" name="contrasena2" required>
 		</p>
         <br>
         <p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
 	</form>
 
-    <?php 
 
-
-
-    ?>
-    
+   

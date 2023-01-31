@@ -31,9 +31,9 @@
                     <li>
                         <a href="foods.html">Comida</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="contact.html">Contacto</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="login.html">Cerrar Sesion</a>
                     </li>
