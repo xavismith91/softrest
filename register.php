@@ -23,9 +23,6 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="register.php">Registrate</a>
-                    </li>
-                    <li>
                         <a href="login.html">Iniciar Sesion</a>
                     </li>
                 </ul>
@@ -76,17 +73,54 @@
 
         
         .parrafo_boton{
-            padding: 10px;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: orangered;
+            color: white;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            font-size: 5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: .5rem;
+            border: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
         }
 
+        .contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+@media (min-width: 768px){
+ .servicios
+  {
+       display: grid;   
+       grid-template-columns: repeat(3, 1fr);   /** divide en 3 los espacios por columnas  **/
+       column-gap: 1rem;
+   
+  }
+}
+
+
+.servicio {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    
+}
 	</style>
 </head>
 
-</script> 
-	<h2>Registrarme</h2>
-		<form action="insertnewuser.php" method="POST">
+
+
+    <main class="contenedor sombra">
+
+
+	<h2>Registrarme/Login</h2>
+		<form action="insertnewuser.php" class="contenedor sombra" method="POST" name="form">
 		<p class="parrafo">
         Nombre<br>
 		<input type="text" name="nombre" required>
@@ -122,30 +156,14 @@
 		<input type="password" name="contrasena" id="contrasena" required>
 		</p>
         <br>
-		<p class="parrafo">
-		Confirma Contraseña<br>
-		<input type="password" name="contrasena2" id="contrasena2" required>
-		</p>
-        <br>
-
-
-        <p class="parrafo_boton"><input type="submit" id="submit" value="Registrarme"></p> 
 		
+
+
+       <center><input type="submit" name="submit" value="Registrarme" class="btn btn-primary"></center>
+</main>
 	</form>
 
 	
-<script>
-document.getElementById("submit").addEventListener("click", function(event){
-  var password1 = document.getElementById("password1").value;
-  var password2 = document.getElementById("password2").value;
 
-  if (password1 != password2) {
-    event.preventDefault();
-    alert("Las contraseñas no coinciden");
-  }
-});
-
-
-</script>
 
    
