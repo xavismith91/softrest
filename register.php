@@ -83,9 +83,10 @@
 
 	</style>
 </head>
-<body>
 
-	<form action="insertnewuser.php" method="POST">
+</script> 
+	<h2>Registrarme</h2>
+		<form action="insertnewuser.php" method="POST">
 		<p class="parrafo">
         Nombre<br>
 		<input type="text" name="nombre" required>
@@ -116,18 +117,35 @@
 		<input type="text" name="rol" required>
 		</p>
         <br>
-        <p class="parrafo" value="contrasena">
+        <p class="parrafo">
 		Constraseña<br>
-		<input type="password" name="$contrasena" required>
+		<input type="password" name="contrasena" id="contrasena" required>
 		</p>
         <br>
-        <p class="parrafo" value="$contrasena2">
-		Confirmar Contraseña<br>
-		<input type="password" name="contrasena2" required>
+		<p class="parrafo">
+		Confirma Contraseña<br>
+		<input type="password" name="contrasena2" id="contrasena2" required>
 		</p>
         <br>
-        <p class="parrafo_boton"><input type="submit" value="Registrarme"></p> 
+
+
+        <p class="parrafo_boton"><input type="submit" id="submit" value="Registrarme"></p> 
+		
 	</form>
 
+	
+<script>
+document.getElementById("submit").addEventListener("click", function(event){
+  var password1 = document.getElementById("password1").value;
+  var password2 = document.getElementById("password2").value;
+
+  if (password1 != password2) {
+    event.preventDefault();
+    alert("Las contraseñas no coinciden");
+  }
+});
+
+
+</script>
 
    
