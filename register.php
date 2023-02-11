@@ -8,6 +8,7 @@
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="deplegable.js"></script>
 </head>
 
 <body>
@@ -39,9 +40,9 @@
 
 		form{
 			background-color:  #f7f2ed  ;
-			padding: 30px;
-			margin: 90px;
-			width: 300px;
+			padding: 50px;
+			margin: 100px;
+			width: 350px;
 		}
 
 		input[type=text], input[type=password], input[type="mail"]{
@@ -88,9 +89,17 @@
         }
 
         .contenedor{
-    max-width: 120rem;
-    margin: 0 auto 0 auto;
-    text-align: center;
+        max-width: 120rem;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        }
+
+        .select{
+          width: 300px;
+          height: 40px;
+          font-size: 16px;  
+        }
+    
 }
 
 
@@ -156,6 +165,17 @@
 		<input type="password" name="contrasena" id="contrasena" required>
 		</p>
         <br>
+        <p>
+         <br>   
+        <select class="select" id="select-menu">
+            <option value="option1">Administrador</option>
+            <option value="option2">Usuario</option>
+            <option value="option3">Repartidor</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
 		
 
 
