@@ -2,7 +2,7 @@
 
 //declaramos las variables del usuario y contraseña
 $usuario = $_POST['usuario'];
-$password = $_POST['password'];
+$contrasena = $_POST['contrasena'];
 
 //iniciamos la sesion dentro del servidor 
 session_start();  
@@ -15,7 +15,7 @@ include('db.php');
 $conexion=mysqli_connect("localhost","root","","test");
 
 //hacemos la consulta a la base de datos para obtener los datos del ususario con su contraseña por medio de una variable 
-$consulta="SELECT*FROM login where usuario='$usuario' and password='$password'";
+$consulta="SELECT*FROM users where usuario='$usuario' and contrasena='$contrasena'";
 
 //el resultado de la consulta se guardara en la variable "resultado"
 

@@ -131,6 +131,11 @@
 	<h2>Registrarme</h2>
 		<form action="insertnewuser.php" class="contenedor sombra" method="POST" name="form">
 		<p class="parrafo">
+        Usuario<br>
+		<input type="text" name="usuario" required>
+		</p>
+        <br>
+        <p class="parrafo">
         Nombre<br>
 		<input type="text" name="nombre" required>
 		</p>
@@ -155,10 +160,13 @@
 		<input type="text" name="estado" required>
 		</p>
         <br>
-        <p class="parrafo">
-		Rol<br>
-		<input type="text" name="rol" required>
-		</p>
+        <br>
+        <select class="select" name="rol">
+            <option value="1">Administrador</option>
+            <option value="2">Usuario</option>
+            <option value="3">Repartidor</option>
+        </select>
+        <br>
         <br>
         <p class="parrafo">
 		Constraseña<br>
@@ -167,14 +175,7 @@
         <br>
         <p>
          <br>   
-        <select class="select" id="select-menu">
-            <option value="option1">Administrador</option>
-            <option value="option2">Usuario</option>
-            <option value="option3">Repartidor</option>
-        </select>
-        <br>
-        <br>
-        <br>
+        
 
 		
 

@@ -1,6 +1,7 @@
 <?php
 
 //declaramos las variables 
+    $usuario= $_POST['usuario'];
     $nombre = $_POST['nombre'];
     $appat = $_POST['appat'];
     $appmat =$_POST['appmat'];
@@ -34,7 +35,7 @@ echo "Conexion exitosa";
 
 //hacemos el query para insertar registros 
 
-$sql = "INSERT INTO users (nombre,appat,appmat,correo,estado,rol,contrasena) VALUES ('$nombre','$appat','$appmat','$correo','$estado','$rol','$contrasena')";
+$sql = "INSERT INTO users (usuario,nombre,appat,appmat,correo,estado,rol,contrasena) VALUES ('$usuario','$nombre','$appat','$appmat','$correo','$estado','$rol','$contrasena')";
 
 if (mysqli_query($conn,$sql)){
      
