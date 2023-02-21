@@ -39,7 +39,7 @@ $sql = "INSERT INTO users (usuario,nombre,appat,appmat,correo,estado,rol,contras
 
 if (mysqli_query($conn,$sql)){
      
-     header("location:entrada.php");
+     header("location:entrada.html");
 }
 else
 {
