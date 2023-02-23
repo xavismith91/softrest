@@ -26,7 +26,7 @@ $filas=mysqli_num_rows($resultado);
 
 if ($filas) 
 {
-    header("location:entrada.php");
+    header("location:entrada.html");
 }
 else
 {
