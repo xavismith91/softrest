@@ -1,3 +1,10 @@
+<?php
+$nombre = $_POST[$filas];
+
+echo $nombre;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +12,13 @@
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Castillo</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navbar Section Starts Here -->
+
     <section class="navbar">
         <div class="container">
             <div class="logo">
@@ -35,7 +42,7 @@
                         <a href="contact.html">Contacto</a>
                     </li> -->
                     <li>
-                        <a href="entrada.html">Iniciar Sesion</a>
+                        <a href="login.html">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>
@@ -43,24 +50,63 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <!-- Navbar Section Ends Here -->
-
-    <!-- fOOD sEARCH Section Starts Here -->
+    
     <section class="food-search text-center">
         <div class="container">
             
             <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                <input type="search" name="search" placeholder="Busca Tu Comida Favorita." required>
+                <input type="submit" name="submit" value="Buscar" class="btn btn-primary">
             </form>
 
         </div>
+    </section> 
+
+  
+
+    
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center"> Castillo</h2>
+            <h2 class="text-center">Los Más Pedidos</h2>
+
+            <a href="category-foods.html">
+            <div class="box-3 float-container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Pizza</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Hamburguesas
+                </h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Gourmet</h3>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
     </section>
-    <!-- fOOD sEARCH Section Ends Here -->
+    
 
 
+  
+    
+    
 
-    <!-- fOOD MEnu Section Starts Here -->
+
+    
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Nuestro Menú</h2>
@@ -70,15 +116,15 @@
                     <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                 </div>
 
-                <div class="food-menu-desc">
+                <div class="food-menu-desc" id="prim-prod">
                     <h4>Pizza Italiana c/Jamón Serrano. </h4>
                     <p class="food-price">$250</p>
                     <p class="food-detail">
-                        Hecha con nuestra mejor maza madre.
+                        <p class="food-detail">Hecha con nuestra casera masa madre.</p>
                     </p>
                     <br>
 
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
@@ -91,17 +137,17 @@
                     <h4>Guacamole Burger</h4>
                     <p class="food-price">$230</p>
                     <p class="food-detail">
-                        Nuestra mejor Hamburguesa hecha con nuestro fesco guacaolme y una calidad de salsa excepcional.
+                        Nuestra mejor Hamburguesa hecha con nuestro fresco guacaolme y una calidad de salsa excepcional.
                     </p>
                     <br>
 
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/menu-burger.jpg" alt="Chicke Hawain Burger" class="img-responsive img-curve">
+                    <img src="images/double-roast-bbq-burger.png" alt="Chicke Hawain Burger" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
@@ -112,7 +158,7 @@
                     </p>
                     <br>
 
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
@@ -129,24 +175,23 @@
                     </p>
                     <br>
 
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    <img src="images/hawaian.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
                     <h4>Hawaian Pizza</h4>
                     <p class="food-price">$250</p>
                     <p class="food-detail">
-                        La Tradicional  .
+                        La Tradicional.
                     </p>
                     <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
@@ -159,11 +204,10 @@
                     <h4>Giosas</h4>
                     <p class="food-price">$200 / 6 Pz.</p>
                     <p class="food-detail">
-                        Giosas caseras rellenas con carne o vega.
+                        Giosas caseras rellenas con carne o vegetales.
                     </p>
                     <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Ordenar</a>
                 </div>
             </div>
 
@@ -174,8 +218,17 @@
 
         </div>
 
+        <p class="text-center">
+            <a href="categories.html">Ver Más</a>
+        </p>
+        <br>
+        <br>
+        <div>
+                    
     </section>
     
+
+
     <section class="social">
         <div class="container text-center">
             <h2 class="text-center">Realiza tu Pedido.</h2>
@@ -195,6 +248,14 @@
             </ul>
         </div>
     </section>
+    
+
+
+    <section class="footer">
+        <div class="container text-center">
+        </div>
+    </section>
+    
 
 </body>
 </html>
