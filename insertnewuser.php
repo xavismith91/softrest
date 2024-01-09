@@ -13,7 +13,7 @@
 
     //con esta asignacion se encriptará la contraseña 
 
-    $hash = password_hash($contrasena, PASSWORD_BCRYPT);
+    // $hash = password_hash($contrasena, PASSWORD_BCRYPT);
 
 
 //declaramos variables para la conexion a la base de datos
@@ -40,7 +40,7 @@ echo "Conexion exitosa";
 
 //hacemos el query para insertar registros 
 
-$sql = "INSERT INTO users (usuario,nombre,appat,appmat,correo,estado,rol,contrasena) VALUES ('$usuario','$nombre','$appat','$appmat','$correo','$estado','$rol','$hash')";
+$sql = "INSERT INTO users (usuario,nombre,appat,appmat,correo,estado,rol,contrasena) VALUES ('$usuario','$nombre','$appat','$appmat','$correo','$estado','$rol','$contrasena')";
 
 if (mysqli_query($conn,$sql)){
      
