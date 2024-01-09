@@ -1,10 +1,3 @@
-<?php
-$nombre = $_POST[$filas];
-
-echo $nombre;
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
