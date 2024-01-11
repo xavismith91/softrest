@@ -33,10 +33,6 @@ var_dump($resultado);
 
 $filas = mysqli_fetch_array($resultado);
 
-
-
-
-
 if ($filas) 
 {
     header("location:entrada.php"); 
