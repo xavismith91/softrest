@@ -25,17 +25,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$destinatario = $email;
 		$asunto = "Recuperación de contraseña";
 		$mensaje = "Su contraseña es: " . $contrasena;
-		$headers = "From: tu_correo@tu_dominio.com" . "\r\n" .
-				   "Reply-To: tu_correo@tu_dominio.com" . "\r\n" .
+		$headers = "From: recoverpass@ce2000.mx" . "\r\n" .
+				   "Reply-To: recoverpass@ce2000.mx" . "\r\n" .
 				   "X-Mailer: PHP/" . phpversion();
 
 		if(mail($destinatario, $asunto, $mensaje, $headers)) {
 			echo "Se ha enviado un correo electrónico con su contraseña.";
 		} else {
-			echo "No se ha podido enviar el correo electrónico.";
+			echo "No se puede enviar el correo electrónico.";
 		}
 	} else {
-		echo "No se ha encontrado ninguna cuenta con ese correo electrónico.";
+		echo "No existe cuenta con ese correo electrónico.";
 	}
 
 	$conn->close();
