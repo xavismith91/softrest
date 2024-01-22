@@ -37,6 +37,11 @@
                     <li>
                         <a href="login.html">Cerrar Sesion</a>
                     </li>
+
+                    <li>
+                        <a href="login.html">Cerrar Sesion</a>
+                    </li>
+
                 </ul>
             </div>
 

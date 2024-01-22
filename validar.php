@@ -3,7 +3,7 @@
 //declaramos las variables del usuario y contraseña
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
-$hash = password_hash($contrasena, PASSWORD_BCRYPT);
+$hash = password_hash($contrasena);
 
 //iniciamos la sesion dentro del servidor 
 session_start();  
